@@ -15,6 +15,7 @@ export_file_name = 'export.pkl'
 
 #classes = ['black', 'grizzly', 'teddys']
 classes = ['bread', 'corgi']
+
 path = Path(__file__).parent
 
 app = Starlette()
