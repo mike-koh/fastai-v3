@@ -9,21 +9,14 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-#export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-#This is the original bear classifier
-
-export_file_url = 'https://drive.google.com/uc?export=download&id=1ojC4riGuP4pG4uEnUkFkapELqf-pZpD-'
-#This is the corgi classifer
-
-#export_file_url = 'https://drive.google.com/uc?export=download&id=1QppIZI6ptDX7kxyelTWN6sYRmv3_b6nH'
-#Think this is the Christmas Classifier, but it might be actually for corgies
-
+export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+#export_file_url = 'https://drive.google.com/uc?export=download&id=1ojC4riGuP4pG4uEnUkFkapELqf-pZpD-' #Corgis
+#export_file_url = 'https://drive.google.com/uc?export=download&id=1QppIZI6ptDX7kxyelTWN6sYRmv3_b6nH' #Think this is the Christmas Classifier, but it might be actually for corgies
 export_file_name = 'export.pkl'
 
-#classes = ['black', 'grizzly', 'teddys']
-classes = ['bread', 'corgi']
+classes = ['black', 'grizzly', 'teddys']
+#classes = ['bread', 'corgi']
 #classes = ['Nathalie', 'Noelle']
-
 path = Path(__file__).parent
 
 app = Starlette()
