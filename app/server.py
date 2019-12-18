@@ -16,13 +16,13 @@ from starlette.staticfiles import StaticFiles
 #This is the corgi classifer
 
 export_file_url = 'https://drive.google.com/uc?export=download&id=1QppIZI6ptDX7kxyelTWN6sYRmv3_b6nH'
-#This is the Christmas Classifier
+#Think this is the Christmas Classifier, but it might be actually for corgies
 
 export_file_name = 'export.pkl'
 
 #classes = ['black', 'grizzly', 'teddys']
-#classes = ['bread', 'corgi']
-classes = ['Nathalie', 'Noelle']
+classes = ['bread', 'corgi']
+#classes = ['Nathalie', 'Noelle']
 
 path = Path(__file__).parent
 
